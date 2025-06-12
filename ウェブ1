@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>麗澤大学マップ</title>
+  <style>
+    /* ベースリセット */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: "Gothic typeface", "Meiryo", sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.5;
+      padding: 1rem;
+    }
+    header {
+      background: #cc0000;  /* UTokyoイメージのレッドを踏襲 */
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    header h1 {
+      color: #fff;
+      font-size: 1.4rem;
+    }
+
+    /* 小ボタン（リンクリスト） */
+    .map-list {
+      list-style: none;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 2rem;
+    }
+    .map-list li + li { border-top: 1px solid #ddd; }
+    .map-list a {
+      display: block;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      color: #0073e6;
+      position: relative;
+    }
+    .map-list a::after {
+      content: "›";
+      position: absolute;
+      right: 1rem;
+      font-size: 1.2rem;
+      color: #999;
+    }
+    .map-list a:active { background: #e1eaff; }
+
+    /* 大ボタン（コール・トゥ・アクション） */
+    .cta {
+      text-align: center;
+    }
+    .cta a {
+      display: inline-block;
+      width: 100%;
+      max-width: 500px;
+      padding: 1rem 0;
+      background: #0073e6;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border-radius: 0.5rem;
+      transition: background 0.2s;
+    }
+    .cta a:hover {
+      background: #005bb5;
+    }
+    .cta a:active {
+      background: #004494;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>麗澤大学マップ</h1>
+  </header>
+
+  <!-- 小さめのリンクボタン4つ -->
+  <ul class="map-list">
+    <li><a href="haichi.html">チーム</a></li>
+    <li><a href="tatemono.html">建物マップ</a></li>
+    <li><a href="shuuhen.html">周辺施設マップ</a></li>
+    <li><a href="https://www.reitaku-u.ac.jp/about/access/">アクセスマップ</a></li>
+  </ul>
+
+  <!-- 画像をクリックすると別ページへ -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <!-- ビューポートの設定で画面サイズに合わせてスケーリング -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>レスポンシブ画像リンク例</title>
+  <style>
+    /* リンク全体をブロック要素にして中央寄せ */
+    .responsive-link {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+    }
+    /* 画像は親要素の横幅に合わせる */
+    .responsive-link img {
+      width: 100%;
+      max-width: 600px; /* 必要に応じて最大幅を調整 */
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .responsive-link p {
+      margin: 10px 0 0;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <a href="nextpage.html" class="responsive-link">
+    <img src="me.jpg.png" alt="クリックで移動">
+    <p>クリックで移動</p>
+  </a>
+</body>
+</html>
+<footrer>
+  <p>製作：YOU team</p>
+  </footer>
+</body>
+</html>
